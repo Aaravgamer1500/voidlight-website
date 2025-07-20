@@ -12,87 +12,99 @@
   <link rel="icon" href="https://yourdomain.com/favicon.png" type="image/png">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
   <style>
-    html {
-      scroll-behavior: smooth;
-    }
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
+    html { scroll-behavior: smooth; }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
     body {
       font-family: 'Roboto', sans-serif;
       background-color: #0d0d0d;
       color: #ffffff;
+      line-height: 1.6;
     }
     header {
       background: linear-gradient(90deg, #8a2be2, #4b0082);
-      padding: 30px;
+      padding: 40px 20px;
       text-align: center;
       color: #fff;
     }
-    header h1 {
-      font-size: 3em;
-      margin-bottom: 10px;
-    }
-    header p {
-      font-size: 1.2em;
-    }
+    header h1 { font-size: 3.5em; margin-bottom: 10px; }
+    header p { font-size: 1.3em; }
     nav {
       background-color: #1a1a1a;
       display: flex;
       justify-content: center;
-      padding: 15px 0;
+      padding: 20px;
       flex-wrap: wrap;
+      gap: 15px;
     }
     nav a {
-      color: #bbb;
+      color: #ccc;
       text-decoration: none;
-      margin: 10px 15px;
-      font-weight: 600;
+      font-weight: bold;
+      font-size: 1em;
     }
-    nav a:hover {
-      color: #8a2be2;
-    }
+    nav a:hover { color: #8a2be2; }
     section {
-      padding: 40px 20px;
+      padding: 50px 20px;
       max-width: 1200px;
       margin: auto;
     }
+    h2 {
+      text-align: center;
+      font-size: 2.2em;
+      margin-bottom: 20px;
+    }
     .roles {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 15px;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
     }
     .role {
       background-color: #1f1f1f;
-      padding: 15px;
+      padding: 20px;
       border-radius: 10px;
-      text-align: center;
       border: 1px solid #333;
       cursor: pointer;
+      transition: background-color 0.3s ease;
     }
-    .role:hover {
-      background-color: #2a2a2a;
-    }
+    .role:hover { background-color: #292929; }
     .role-description {
       display: none;
       background-color: #2b2b2b;
       margin-top: 10px;
-      padding: 10px;
+      padding: 12px;
       border-radius: 5px;
-      font-size: 0.9em;
+      font-size: 0.95em;
       color: #ccc;
     }
-    .role.active .role-description {
+    .role.active .role-description { display: block; }
+    .ticket-link {
+      margin-top: 10px;
       display: block;
+      color: #8a2be2;
+      text-align: center;
+      font-size: 0.95em;
+    }
+    ul.rules {
+      list-style: none;
+      padding-left: 0;
+    }
+    ul.rules li {
+      margin-bottom: 15px;
+      padding-left: 1.5em;
+      position: relative;
+    }
+    ul.rules li::before {
+      content: "✔️";
+      position: absolute;
+      left: 0;
+      color: #8a2be2;
     }
     form input, form textarea, form button {
       display: block;
       width: 100%;
-      margin: 10px 0;
-      padding: 12px;
-      border-radius: 5px;
+      margin: 12px 0;
+      padding: 14px;
+      border-radius: 6px;
       border: none;
     }
     form input, form textarea {
@@ -105,37 +117,27 @@
       font-weight: bold;
       cursor: pointer;
     }
-    form button:hover {
-      background-color: #7a1fd1;
+    form button:hover { background-color: #7a1fd1; }
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+    .gallery img {
+      max-width: 300px;
+      border-radius: 10px;
     }
     footer {
       text-align: center;
-      padding: 20px;
+      padding: 25px;
       background-color: #1a1a1a;
+      color: #aaa;
       font-size: 0.9em;
-      color: #ccc;
     }
-    a {
-      color: #42aaff;
-      text-decoration: none;
-    }
-    a:hover {
-      text-decoration: underline;
-    }
-    ul.rules {
-      list-style: none;
-      padding-left: 0;
-    }
-    ul.rules li {
-      margin-bottom: 15px;
-      padding-left: 1.2em;
-      position: relative;
-    }
-    ul.rules li::before {
-      content: "✔️";
-      position: absolute;
-      left: 0;
-      color: #8a2be2;
+    @media (max-width: 768px) {
+      header h1 { font-size: 2.2em; }
+      nav a { font-size: 0.95em; }
     }
   </style>
   <script>
@@ -154,11 +156,15 @@
     <h1>VoidLight Community</h1>
     <p>Welcome to the official VoidLight Discord server hub!</p>
   </header>
-
   <nav>
+    <a href="#rules">📜 Rules</a>
+    <a href="#roles">👑 Roles</a>
+    <a href="#gallery">🖼️ Gallery</a>
+    <a href="#suggestions">💡 Suggestions</a>
     <a href="https://discord.com/channels/1395407992312172604/1395412200381743165" target="_blank">💬 Chat</a>
     <a href="https://discord.com/channels/1395407992312172604/1395411892289405098" target="_blank">📢 Announcements</a>
     <a href="https://discord.com/channels/1395407992312172604/1395777228230361188" target="_blank">🏆 Levels</a>
+    <a href="https://discord.com/channels/1395407992312172604/1395413174836269129" target="_blank">🎫 Create Ticket</a>
   </nav>
 
   <section id="rules">
@@ -179,33 +185,31 @@
   </section>
 
   <section id="roles">
-    <h2>📌 All Roles</h2>
+    <h2>👑 Server Roles & Descriptions</h2>
     <div class="roles">
-      <div class="role">
-        👑 Executive
-        <div class="role-description">Server leadership role, manages major decisions and projects.</div>
-      </div>
-      <div class="role">
-        🌌 𝖛𝖔𝖎𝖉𝖋𝖔𝖚𝖓𝖉𝖊𝖗
-        <div class="role-description">Founder of the VoidLight server — highest level of respect and decision power.</div>
-      </div>
-      <div class="role">
-        👋 Inviter
-        <div class="role-description">Actively invites new members and grows the community.</div>
-      </div>
-      <div class="role">
-        🎄 Ticket Support
-        <div class="role-description">Handles support queries through the ticketing system.</div>
-      </div>
-      <div class="role">
-        🤝 Friends
-        <div class="role-description">Friendly contributors to the server. No staff powers but appreciated members.</div>
-      </div>
+      <div class="role">👑 Executive<div class="role-description">Server leadership role, manages major decisions and projects.</div></div>
+      <div class="role">🌌 𝖛𝖔𝖎𝖉𝖋𝖔𝖚𝖓𝖉𝖊𝖗<div class="role-description">Founder of the VoidLight server — highest level of respect and decision power.</div></div>
+      <div class="role">👋 Inviter<div class="role-description">Actively invites new members and grows the community.</div></div>
+      <div class="role">🎄 Ticket Support<div class="role-description">Handles support queries through the <a class="ticket-link" href="https://discord.com/channels/1395407992312172604/1395413174836269129" target="_blank">Create Ticket</a> system.</div></div>
+      <div class="role">🤝 Friends<div class="role-description">Friendly contributors to the server. No staff powers but appreciated members.</div></div>
+    </div>
+  </section>
+
+  <section id="gallery">
+    <h2>🖼️ Community Gallery</h2>
+    <div class="gallery">
+      <img src="https://yourdomain.com/img1.png" alt="Gallery Image 1" />
+      <img src="https://yourdomain.com/img2.png" alt="Gallery Image 2" />
+      <img src="https://yourdomain.com/img3.png" alt="Gallery Image 3" />
     </div>
   </section>
 
   <section id="suggestions">
     <h2>💡 Suggest Something</h2>
+    <p style="text-align:center;font-size:1.1em;">
+      You can also suggest directly in our Discord:
+      <a href="https://discord.gg/voidlight" target="_blank" style="color:#8a2be2;font-weight:bold;">Join Suggestion Channel</a>
+    </p>
     <form action="https://formsubmit.co/your-email@gmail.com" method="POST">
       <input type="text" name="name" placeholder="Your Name" required />
       <textarea name="suggestion" rows="4" placeholder="Your suggestion..." required></textarea>
