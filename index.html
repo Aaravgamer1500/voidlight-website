@@ -1,149 +1,176 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta property="og:title" content="VoidLight Community" />
+  <meta property="og:description" content="Home of the most powerful Void Warriors. Join our Discord, apply for staff, give suggestions, and connect with our roles!" />
+  <meta property="og:image" content="https://yourdomain.com/og-image.jpg" />
+  <meta property="og:url" content="https://yourdomain.com" />
+  <meta name="theme-color" content="#8a2be2" />
   <title>VoidLight Community</title>
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #0f0f0f;
-      color: #fff;
+    * {
       margin: 0;
       padding: 0;
+      box-sizing: border-box;
     }
-    header {
-      background-color: #1f1f1f;
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #0f0f0f;
+      color: #fff;
+    }
+    nav {
+      background: #1f1f1f;
       padding: 20px;
-      text-align: center;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
     }
-    header h1 {
-      margin: 0;
-      font-size: 36px;
+    nav h1 {
       color: #8a2be2;
     }
-    .section {
+    nav a {
+      color: #fff;
+      margin-left: 15px;
+      text-decoration: none;
+    }
+    header {
+      background: linear-gradient(to right, #8a2be2, #4b0082);
+      padding: 60px 20px;
+      text-align: center;
+    }
+    header h2 {
+      font-size: 36px;
+      margin-bottom: 10px;
+    }
+    .container {
+      max-width: 1000px;
+      margin: auto;
       padding: 20px;
-      border-bottom: 1px solid #333;
+    }
+    .section {
+      margin-bottom: 40px;
     }
     .roles {
       display: flex;
       flex-wrap: wrap;
+      gap: 10px;
     }
     .role {
-      background-color: #1e1e1e;
-      padding: 10px;
-      margin: 8px;
-      border-radius: 8px;
-      flex: 1 1 200px;
-    }
-    .form input, .form textarea {
-      width: 100%;
-      padding: 8px;
-      margin: 6px 0;
-      border: none;
-      border-radius: 5px;
-    }
-    .form button {
-      background: #8a2be2;
-      color: white;
+      background: #1e1e1e;
       padding: 10px 15px;
-      border: none;
+      border-radius: 6px;
+      flex: 1 1 200px;
+      text-align: center;
+    }
+    form input, form textarea, form button {
+      width: 100%;
+      margin: 10px 0;
+      padding: 10px;
       border-radius: 5px;
+      border: none;
+    }
+    form button {
+      background: #8a2be2;
+      color: #fff;
       cursor: pointer;
     }
     footer {
-      background: #1f1f1f;
       text-align: center;
-      padding: 15px;
+      background: #1f1f1f;
+      padding: 20px;
       font-size: 14px;
-    }
-    a {
-      color: #42aaff;
-      text-decoration: none;
-    }
-    a:hover {
-      text-decoration: underline;
     }
   </style>
 </head>
 <body>
+  <nav>
+    <h1>🌌 VoidLight</h1>
+    <div>
+      <a href="#apply">Apply</a>
+      <a href="#roles">Roles</a>
+      <a href="#suggest">Suggest</a>
+      <a href="#ticket">Ticket</a>
+      <a href="#connect">Connect</a>
+    </div>
+  </nav>
 
-<header>
-  <h1>🌌 VoidLight Community</h1>
-  <p>Home of the most powerful Void Warriors</p>
-</header>
+  <header>
+    <h2>Welcome to VoidLight Community</h2>
+    <p>Join our journey and become a true Void Warrior</p>
+  </header>
 
-<section class="section">
-  <h2>👑 Founders & Executives</h2>
-  <p><strong>Founders:</strong> Karexayush, Pexxy</p>
-  <p><strong>Co-founder / Executive:</strong> Aarav_gamer</p>
-</section>
+  <div class="container">
+    <section class="section">
+      <h3>👑 Founders & Executives</h3>
+      <p><strong>Founders:</strong> Karexayush, Pexxy</p>
+      <p><strong>Co-founder / Executive:</strong> Aarav_gamer</p>
+    </section>
 
-<section class="section">
-  <h2>📋 Apply for Staff</h2>
-  <p>Want to join the staff team? Apply here:</p>
-  <a href="https://forms.gle/2fAPFcQbnC7FuV876" target="_blank">👉 Staff Application Form</a>
-</section>
+    <section id="apply" class="section">
+      <h3>📋 Apply for Staff</h3>
+      <a href="https://forms.gle/2fAPFcQbnC7FuV876" target="_blank">👉 Fill Staff Application</a>
+    </section>
 
-<section class="section">
-  <h2>📌 All Roles</h2>
-  <div class="roles">
-    <div class="role">💛 「👾」Void Manager</div>
-    <div class="role">💙 「👾」Void Admin</div>
-    <div class="role">💗 Server Booster</div>
-    <div class="role">🥇 STAFF OF THE WEEK</div>
-    <div class="role">🎬 「🎬」Production Team</div>
-    <div class="role">🟢 「🛡️」Sr. Mod</div>
-    <div class="role">🔵 「⚔️」Void Mod</div>
-    <div class="role">🔵 「🌀」Jr. Mod</div>
-    <div class="role">🟥 「👽」Staff</div>
-    <div class="role">🟥 「🧍」Trial Staff</div>
-    <div class="role">💜 「🛡️」Void Staff Team</div>
-    <div class="role">⚔️ Void Warlord</div>
-    <div class="role">🟠 VoidCore Chief</div>
-    <div class="role">🟣 VoidCaster</div>
-    <div class="role">⚔️ VoidSlayer</div>
-    <div class="role">⛏️ VoidMiner</div>
+    <section id="roles" class="section">
+      <h3>📌 Server Roles</h3>
+      <div class="roles">
+        <div class="role">💛 「👾」Void Manager</div>
+        <div class="role">💙 「👾」Void Admin</div>
+        <div class="role">💗 Server Booster</div>
+        <div class="role">🥇 STAFF OF THE WEEK</div>
+        <div class="role">🎬 「🎬」Production Team</div>
+        <div class="role">🟢 「🛡️」Sr. Mod</div>
+        <div class="role">🔵 「⚔️」Void Mod</div>
+        <div class="role">🔵 「🌀」Jr. Mod</div>
+        <div class="role">🟥 「👽」Staff</div>
+        <div class="role">🟥 「🧍」Trial Staff</div>
+        <div class="role">💜 「🛡️」Void Staff Team</div>
+        <div class="role">⚔️ Void Warlord</div>
+        <div class="role">🟠 VoidCore Chief</div>
+        <div class="role">🟣 VoidCaster</div>
+        <div class="role">⚔️ VoidSlayer</div>
+        <div class="role">⛏️ VoidMiner</div>
+      </div>
+    </section>
+
+    <section id="suggest" class="section">
+      <h3>📝 Suggestion Form</h3>
+      <form>
+        <input type="text" placeholder="Your Discord Username" required />
+        <textarea placeholder="Write your suggestion here..." required></textarea>
+        <button type="submit">Send Suggestion</button>
+      </form>
+    </section>
+
+    <section id="ticket" class="section">
+      <h3>🎫 Create Ticket</h3>
+      <form>
+        <input type="text" placeholder="Discord Username" required />
+        <textarea placeholder="What's your issue or question?" required></textarea>
+        <button type="submit">Submit Ticket</button>
+      </form>
+    </section>
+
+    <section id="connect" class="section">
+      <h3>🔗 Connect Your Discord</h3>
+      <form>
+        <input type="text" placeholder="Discord Tag (e.g. user#1234)" required />
+        <input type="text" placeholder="Minecraft Username or Email" />
+        <button type="submit">Link</button>
+      </form>
+    </section>
+
+    <section class="section">
+      <h3>💠 Join Our Discord</h3>
+      <a href="https://discord.gg/gHD872S6" target="_blank">👉 Click here to join the VoidLight Discord</a>
+    </section>
   </div>
-</section>
 
-<section class="section">
-  <h2>📝 Suggestions</h2>
-  <form class="form">
-    <input type="text" placeholder="Your Discord Username" required />
-    <textarea placeholder="Your suggestion here..." rows="4" required></textarea>
-    <button type="submit">Submit Suggestion</button>
-  </form>
-</section>
-
-<section class="section">
-  <h2>🎫 Create Ticket</h2>
-  <form class="form">
-    <input type="text" placeholder="Your Discord Username" required />
-    <input type="email" placeholder="Email (optional)" />
-    <textarea placeholder="What's your issue or request?" rows="4" required></textarea>
-    <button type="submit">Create Ticket</button>
-  </form>
-</section>
-
-<section class="section">
-  <h2>🔗 Connect Your Discord</h2>
-  <form class="form">
-    <input type="text" placeholder="Discord Tag (e.g. user#1234)" required />
-    <input type="text" placeholder="Your Email / Minecraft Username" />
-    <button type="submit">Link Account</button>
-  </form>
-</section>
-
-<section class="section">
-  <h2>💠 Join Our Discord</h2>
-  <a href="https://discord.gg/gHD872S6" target="_blank">👉 Click here to join the VoidLight Discord</a>
-</section>
-
-<footer>
-  &copy; 2025 VoidLight Community | Designed by Aarav_gamer ✨
-</footer>
-
+  <footer>
+    &copy; 2025 VoidLight Community | Designed by Aarav_gamer ✨
+  </footer>
 </body>
 </html>
 
